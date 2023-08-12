@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+
+
+}
+ul{
+    list-style-type: none;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+.container {
+    width:90%;
+    max-width: 1100px;
+    margin: auto;
+    
+}
+.top-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.logo{
+  width: 120px;
+  height: 80px;
+}
+.top-nav ul{
+    display: flex;
+
+}
+.top-nav ul li{
+    padding: 0 10px;
+
+}
+.top-nav .left-nav{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.top-nav ul li:hover{
+    border-bottom: 2px solid black;
+}
+.tool-tip{
+    position: relative ;
+}
+ .tooltip .tooltip-text1{
+    visibility : hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top:3em;
+    right:19em;
+
+    margin-bottom: -70px;;
+
+  }
+  .tooltip .tooltip-text2{
+    visibility : hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top:3em;
+    right:15em;
+
+    margin-bottom: -70px;;
+
+  }
+  .tooltip .tooltip-text3{
+    visibility : hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top:3em;
+    right:15em;
+
+    margin-bottom: -70px;;
+
+  }
+
+
+
+.tooltip:hover .tooltip-text1{
+    visibility:visible;
+}
+
+.tooltip:hover .tooltip-text2{
+    visibility:visible;
+}
+
+
+.tooltip:hover .tooltip-text3{
+    visibility:visible;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  .showcase{
+    width:100%;
+    height:50vh;
+    background: url('./Mimages/microsoft\ surface\ family\ \(1\).jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   justify-content: flex-end;
+  }
+
+  .btn{
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px ;
+    margin-bottom: 20px;
+  }
+  .btn:hover{
+    opacity: 0.9;
+    
+  }
+  .showcase h2{
+
+    margin-bottom: 12px;
+  }
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap : 1rem;
+    margin-top: 10px;
+}
+.home-cards img{
+    width:100%;
+}
+.home-cards p{
+    margin-bottom: 15px;
+}
+.home-cards a{
+    font-weight: bold;
+    color:#005DA6;
+}
+.home-cards a:hover{
+    border-bottom: 2px solid #005DA6;
+    margin-left: 10px ;
+}
+
+.findpc{
+    width: 100%;
+    height: 400px;
+    background: url('https://ze-microsoft.netlify.app/assets/rowFULL-dell-laptop.jpg') no-repeat center center/cover;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+}
+
+.findpc .content {
+    width: 40%;
+    padding: 130px 0 0 70px;
+}
+.product-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap : 1rem;
+    margin-top: 10px;
+}
+.product-cards img{
+    width:100%;
+}
+.product-cards p{
+    margin-bottom: 15px;
+}
+.product-cards a{
+    font-weight: bold;
+    color:#005DA6;
+}
+.product-cards a:hover{
+    border-bottom: 2px solid #005DA6;
+    margin-left: 10px ;
+}
+
+.deforestation{
+    width: 100%;
+    height: 400px;
+    background: url('Mimages/green\ trees\ with\ woman\ looking\ at\ them\ from\ ground.jpg') no-repeat center center/cover;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+}
+
+.deforestation .content1 {
+    width: 40%;
+    padding: 130px 0 0 70px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+    
+
+
+}
+.follow a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #005DA6;
+    background-color: transparent;
+}
+.follow a i {
+    font-size: 32px;
+}
+.follow .follow-text {
+    font-weight: 400;
+    color: #747474;
+    margin-top: 15px;
+}
+.container-2 {
+    width: 100%;
+    background: #f2f2f2;
+}
+.site-nav {
+   
+    background: #f2f2f2;
+    color: #626262;
+    font-size: 12px;
+    padding: 35px 25px;
+    width:100%;
+    margin: 0 auto;
+}
+.site-nav .site-links-inner {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.site-nav ul li {
+    
+    margin-bottom: 10px;
+    
+    
+}
+.site-nav a {
+    color: #6c6c6c;
+    font-size: 11px;
+}
+.site-nav a:hover {
+    border-bottom: 1px solid black;
+}
+/* Footer Section*/
+.footer {
+    background: #f2f2f2;
+    color: #6c6c6c;
+    font-size: 10px;
+    padding: 20px 0;
+}
+.footer-inner {
+    max-width: 1100px;
+    width:90%;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .lang-wrap {
+    margin-bottom: 1px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.footer .lang-wrap a {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    color: #6c6c6c;
+    font-size: 11px;
+}
+.footer .fas {
+    margin-right: 10px;
+}
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+   
+}
+.footer ul li {
+    margin-right: 45px;
+    margin-bottom: 0px;
+}
